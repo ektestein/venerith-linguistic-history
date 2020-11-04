@@ -1,0 +1,106 @@
+digraph history {
+rankdir="LR"
+
+
+subgraph cluster_red {
+    old_ultonian -> old_geldonian
+    old_ultonian -> middle_ultonian -> old_terressian -> old_ronian -> suran
+                old_ronian -> modern_ronian
+            old_terressian -> middle_terressian -> modern_terressian
+        middle_ultonian -> late_ultonian -> old_mienesse -> modern_mienesse
+            late_ultonian -> old_elmentyen -> modern_elmentyen
+}
+
+
+subgraph cluster_brown {
+    old_kordonan -> north_kordonan -> old_risaan -> middle_risaan -> modern_risaan
+        north_kordonan -> old_gordellan -> middle_gordellan -> modern_gordellan
+    old_kordonan -> south_kordonan -> old_gordellan
+        south_kordonan -> old_romou -> north_romou -> modern_gordellan
+                north_romou -> daarush
+            old_romou -> south_romou -> daarush
+}
+
+
+subgraph cluster_turquoise {
+    old_viotian -> continental_viotian -> exonian -> middle_viotian -> ibol
+    old_viotian -> mainland_viotian -> exonian
+        mainland_viotian -> old_viotian_1 -> middle_viotian -> modern_viotian
+                middle_viotian -> saphan
+    old_viotian -> alterran_viotian
+}
+
+
+subgraph cluster_lilac {
+    old_cosen -> ancient_troxian -> old_troxian -> middle_troxian -> modern_troxian
+    old_cosen -> radisonian -> old_troxian
+    old_cosen -> late_cosen
+}
+
+
+subgraph cluster_violet {
+    old_cozorian -> distant_cozorian -> soran -> middle_geldonian
+        distant_cozorian -> donin -> middle_geldonian
+                middle_geldonian -> modern_geldonian
+    old_cozorian -> north_cozorian -> old_laasan -> revolutionary_laasan -> modern_laasan
+        north_cozorian -> old_moz -> middle_moz -> modern_moz
+    old_cozorian -> central_cozorian -> old_tunosian -> late_tunosian -> fridosian
+        central_cozorian -> golden_cozorian
+    old_cozorian -> south_cozorian -> golden_cozorian -> middle_cozorian -> modern_cozorian
+}
+
+
+subgraph cluster_carrot {
+    old_calidonian -> west_calidonian -> golden_calidonian -> middle_calidonian -> modern_calidonian
+    old_calidonian -> east_calidonian -> old_aridian -> modern_aridian -> modern_calidonian
+        east_calidonian -> barun
+}
+
+
+subgraph cluster_purple {
+    old_raihaten -> north_raihaten -> old_gareden -> middle_gareden -> modern_gareden
+        north_raihaten -> old_copan -> late_copan -> modern_gareden
+            old_copan -> ishan
+    old_raihaten -> central_raihaten -> old_copan
+        central_raihaten -> old_uzan -> late_uzan -> modern_eppen
+    old_raihaten -> south_raihaten -> old_uzan
+        south_raihaten -> old_eppen -> middle_eppen -> modern_eppen
+}
+
+
+subgraph cluster_deep_lilac {
+    old_malnjagw -> western_malnjagw -> old_palnan -> middle_palnan -> modern_palnan
+                middle_palnan -> ruiban
+    old_malnjagw -> eastern_malnjagw -> old_lastonian -> middle_lastonian -> modern_lastonian
+}
+
+// -> ancient_ old_ middle_ modern_ late_
+//north_ south_ central_
+//golden_
+
+subgraph cluster_white {
+    old_cnguhweng -> tundra_cnguhweng -> golden_cnguhweng -> middle_cnguhweng -> modern_cnguhweng
+    old_cnguhweng -> boreal_cnguhweng -> golden_cnguhweng
+        boreal_cnguhweng -> rayten -> middle_cnguhweng
+    old_cnguhweng -> desert_cnguhweng -> rayten
+        desert_cnguhweng -> gusal -> north_cnguhweng
+    old_cnguhweng -> marsh_cnguhweng -> gusal
+}
+
+
+subgraph cluster_light_green {
+    old_syvay -> modern_syvay
+    kroh
+}
+
+
+// cross branches links
+old_geldonian -> middle_geldonian
+old_elmentyen -> modern_risaan
+old_troxian -> old_syvay
+middle_calidonian -> kroh
+barun -> middle_gareden
+ishan -> modern_palnan
+north_cnguhweng -> ruiban
+north_cnguhweng -> saphan
+}
