@@ -1,5 +1,8 @@
 digraph history {
 rankdir="LR"
+layout=twopi
+//overlap="prism"
+//bgcolor="grey"
 
 
 subgraph cluster_red {
@@ -187,16 +190,16 @@ subgraph cluster_grey {
 
 
 // cross branches links
-old_geldonian -> middle_geldonian
-old_elmentyen -> modern_risaan
-old_troxian -> old_syvay
+old_geldonian -> middle_geldonian [color="red"]
+old_elmentyen -> modern_risaan [color="red"]
+old_troxian -> old_syvai
 middle_calidonian -> kroh
 barun -> middle_gareden
 ishan -> modern_palnan
 north_cnguhweng -> ruiban
 north_cnguhweng -> saphan
-loozen -> middle_terressian
-middle_hemian -> suran
+loozen -> middle_terressian [color="yellow"]
+middle_hemian -> suran [color="yellow"]
 old_hemian -> old_reijen
 middle_eppen -> modern_erbussan
 chyren -> wai
